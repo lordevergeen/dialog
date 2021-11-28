@@ -1,0 +1,75 @@
+.review{
+  padding: 80px 0;
+  background-color: #F8F8FF;
+&_title{
+  margin-bottom: 52px;
+
+}
+
+  //&_row {
+  //  display: flex;
+  //  column-gap: 60px;
+  //}
+  //
+  //&_content{
+  //  text-align: left;
+  //}
+
+&_list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+
+}
+
+&_item{
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #3035C350;
+  transition: 2s;
+  position: relative;
+  cursor: pointer;
+  &::before{
+position: absolute;
+    content:"";
+    width: 0;
+    height: 3px;
+    background-color: #E6514A;
+    bottom: -20px;
+    left: 0;
+    transition: 3s;
+  }
+  span{
+    opacity: 0;
+transition: 2s;
+    font-size: 0;
+  }
+  &_active{
+    color: #E6514A;
+    &::before{
+      width: 100%;
+      transition: 3s;
+    }
+    span{
+      opacity: 100%;
+      display: inline-block;
+transition: 2s;
+      font-size: 18px;
+
+    }
+  }
+}
+
+
+
+  &_tabs-content {
+    display: none; /* по умолчанию прячем все блоки */
+  &_active {
+    display: block; /* по умолчанию показываем нужный блок */
+   }
+  }
+}

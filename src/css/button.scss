@@ -1,0 +1,34 @@
+.button{
+  width: 229px;
+  height: 48px;
+  border-radius: 40px;
+  font-family: Montserrat,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #E6514A;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  border: none;
+  color: #fff;
+
+  &:hover{
+    //display: flex;
+    //flex-direction: row;
+    //align-items: center;
+    //padding: 14px 28px;
+    //position: absolute;
+    //width: 229px;
+    //height: 48px;
+    //left: 1076px;
+    //top: 66px;
+    background: #BE312B;
+    //border-radius: 40px;
+  }
+
+}
